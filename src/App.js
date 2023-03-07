@@ -1,71 +1,14 @@
 import React from 'react'
+import Header from './Header'
+import List from './List'
+import { db } from './Firebase'
 
 export default function App() {
+  console.log(db)
   return (
     <div className="App">
-      <header className="header">
-        <h1>👩Note</h1>
-        <button>글쓰기</button>
-      </header>
-
-      <ul className="list">
-        <li className="note">
-          <h3>리엑트 컴포넌트</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-            ducimus obcaecati necessitatibus id, repellat quod nam illo nulla
-            consequuntur laudantium voluptates sed culpa? Qui, ipsam unde amet
-            facere saepe quibusdam.
-          </p>
-          <div className="bottom">
-            <div className="date">2023-03-12</div>
-            <button>수정</button>
-            <button>삭제</button>
-          </div>
-        </li>
-        <li className="note">
-          <h3>리엑트 컴포넌트</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-            ducimus obcaecati necessitatibus id, repellat quod nam illo nulla
-            consequuntur laudantium voluptates sed culpa? Qui, ipsam unde amet
-            facere saepe quibusdam.
-          </p>
-          <div className="bottom">
-            <div className="date">2023-03-12</div>
-            <button>수정</button>
-            <button>삭제</button>
-          </div>
-        </li>
-        <li className="note">
-          <h3>리엑트 컴포넌트</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-            ducimus obcaecati necessitatibus id, repellat quod nam illo nulla
-            consequuntur laudantium voluptates sed culpa? Qui, ipsam unde amet
-            facere saepe quibusdam.
-          </p>
-          <div className="bottom">
-            <div className="date">2023-03-12</div>
-            <button>수정</button>
-            <button>삭제</button>
-          </div>
-        </li>
-        <li className="note">
-          <h3>리엑트 컴포넌트</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-            ducimus obcaecati necessitatibus id, repellat quod nam illo nulla
-            consequuntur laudantium voluptates sed culpa? Qui, ipsam unde amet
-            facere saepe quibusdam.
-          </p>
-          <div className="bottom">
-            <div className="date">2023-03-12</div>
-            <button>수정</button>
-            <button>삭제</button>
-          </div>
-        </li>
-      </ul>
+      <Header />
+      <List />
     </div>
   )
 }
